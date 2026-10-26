@@ -1,0 +1,74 @@
+/* 1. Contenedor principal centrado */
+.main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  box-sizing: border-box;
+  
+}
+
+/* 2. Disposición en parejas de a 2 para los personajes */
+.players-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+/* 3. Reemplazar o actualizar los estilos de .player-card para que encajen de a 2 */
+.player-card {
+  width: calc(50% - 10px); /* Forzar 2 por fila */
+  max-width: 260px;
+  border: 2px solid #2e7d32;
+  border-radius: 16px;
+  padding: 15px 20px;
+  text-align: center;
+  background-color: #ffffff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  box-sizing: border-box;
+  margin: 0; /* Quitar margin auto para no romper flex */
+}
+
+.player-card h2 {
+  font-size: 1.3rem;
+  margin-bottom: 8px;
+  color: #222;
+}
+
+.player-card p {
+  margin: 4px 0;
+  font-size: 1rem;
+  color: #444;
+}
+
+/* 4. Estilos para que la Misión también se vea como una Card */
+.mission-card {
+  border: 2px dashed #e67e22; /* Borde estilo misión */
+  border-radius: 16px;
+  padding: 20px 30px;
+  max-width: 400px;
+  width: 100%;
+  background-color: #ffffff;
+  color: #333;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  box-sizing: border-box;
+}
+
+.mission-card h3 {
+  margin-top: 0;
+  color: #d35400;
+  font-size: 1.3rem;
+}
+
+.mission-card p {
+  margin: 8px 0;
+  font-size: 1rem;
+}
+
